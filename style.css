@@ -1,5 +1,12 @@
+/* Buttons: font-family: "otomanopee-one", sans-serif;  */
+/* Titles: font-family: "Kurale", serif; */
+/* Long blurbs: font-family: "Kalam", cursive; */
+/* Color: #104121 */
+
+
 .nav-link {
     color: white;
+    padding: 0;
 }
 
 .nav-link:hover {
@@ -8,16 +15,29 @@
 
 .textdiv {
     background: #104121;
-    height: 400px;
+    border-radius: 70px;
+    height: 300px;
     width: 600px;
-    color: white;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
     opacity: 90%;
     align-items: center;
-    padding: 130px;
+    padding: 40px;
+    
 }
-
+.welcometext{
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    color:white;
+    font-size: 75px;
+    font-family: "Kurale", serif;
+}
+.undertext{
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    color:white;
+    font-size: 25px;
+    font-family: "Kalam", cursive;
+    font-weight: 600;
+}
 .img-header {
     display: grid;
     place-items: center;

@@ -13,23 +13,24 @@
 
     <link rel="stylesheet" href="style.css">
 
-<!-- fonts -->
+    <!-- fonts -->
     <script>
-        (function(d) {
-          var config = {
-            kitId: 'ibg1vaz',
-            scriptTimeout: 3000,
-            async: true
-          },
-          h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        (function (d) {
+            var config = {
+                kitId: 'ibg1vaz',
+                scriptTimeout: 3000,
+                async: true
+            },
+                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
         })(document);
-      </script>
+    </script>
 
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Kurale&display=swap" rel="stylesheet">
-<!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Kurale&display=swap"
+        rel="stylesheet">
+    <!-- fonts -->
 
 </head>
 
@@ -39,14 +40,17 @@
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <img src="images/flos_logo.png" alt="Bootstrap" width="165" height="175">
-              </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            </a>
+            <!-- Hamburger menu -->
+            <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="toggler-icon top-bar"></span>
+                <span class="toggler-icon middle-bar"></span>
+                <span class="toggler-icon bottom-bar"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="#">Home</a>
                     </li>
@@ -71,17 +75,40 @@
         <img src="images/store.jpg" alt="" class="the-image">
         <div class="row d-flex justify-content-center align-items-center flex-column">
             <div class="textdiv d-flex align-items-center flex-column">
-                <h1 class="text-center welcometext"> Welcome to Florentions!</h1>
+                <h1 class="text-center welcometext"> Welcome to Florentinos!</h1>
                 <p class="text-center undertext"> Family Owned and Operated since 1990</p>
             </div>
         </div>
+        <div class="row justify-content-ceter g-4">
+            <div class="col-6 col-lg-3 d-flex justify-content-end">
+                <button class="menu btn">Catering Menu</button>
+            </div>
+            <div class="col-6 col-lg-3 d-flex justify-content-start">
+                <button class="menu btn">Easter Menu</button>
+            </div>
+            <div class="col-6 col-lg-3 d-flex justify-content-end">
+                <button class="menu btn">Lunch Menu Pickup</button>
+            </div>
+            <div class="col-6 col-lg-3 d-flex justify-content-start">
+                <button class="menu btn">Lunch Menu Delivery</button>
+            </div>
+        </div>
+        
+        
+
+
+
+
+    </div>
+
+
     <!-- background -->
 
 
 
 
 
-    
+
 
 
     <footer>

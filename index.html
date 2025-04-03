@@ -13,6 +13,9 @@
 
     <link rel="stylesheet" href="style.css">
 
+     <!-- Vue.js framework (for dynamic content) -->
+     <script src="https://unpkg.com/vue@3.0.11/dist/vue.global.js"></script>
+
     <!-- fonts -->
     <script>
         (function (d) {
@@ -39,7 +42,7 @@
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img src="images/flos_logo.png" alt="Bootstrap" width="165" height="175" class="logoo">
+                <img src="images/flos_logo.png" alt="Bootstrap" class="logoo">
             </a>
             <!-- Hamburger menu -->
             <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around" type="button"
@@ -50,7 +53,7 @@
                 <span class="toggler-icon bottom-bar"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mb-2  mb-lg-0">
+                <ul class="navbar-nav mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="#">Home</a>
                     </li>
@@ -71,7 +74,7 @@
         </div>
     </nav>
 
-    <div class="img-header">
+    <div class="img-header" id="vue_app">
         <img src="images/store.jpg" alt="" class="the-image">
         <div class="row d-flex justify-content-center align-items-center flex-column">
             <div class="textdiv d-flex align-items-center flex-column">
@@ -79,18 +82,9 @@
                 <p class="text-center undertext"> Family Owned and Operated since 1990</p>
             </div>
         </div>
-        <div class="row justify-content-ceter g-4">
-            <div class="col-6 col-lg-3 d-flex justify-content-end">
-                <button class="menu btn">Catering <br> Menu</button>
-            </div>
-            <div class="col-6 col-lg-3 d-flex justify-content-start">
-                <button class="menu btn">Easter <br> Menu</button>
-            </div>
-            <div class="col-6 col-lg-3 d-flex justify-content-end">
-                <button class="menu btn">Lunch Pickup Menu</button>
-            </div>
-            <div class="col-6 col-lg-3 d-flex justify-content-start">
-                <button class="menu btn">Lunch Delivery Menu</button>
+        <div class="row justify-content-center g-4">
+            <div class="the-button col-6 col-lg-3 d-flex" v-for="menu in menus" :key="menu.id">
+                <button class="menu btn">{{ name }}</button>
             </div>
         </div>
     </div>
@@ -115,9 +109,7 @@
     <div class="offer-image col-12 col-lg-6"></div>
     <div class="offer-text col-12 col-lg-6 d-flex flex-column justify-content-center align-items-center">
         <h1 class="text-center info-title">Meet the Owners:</h1>
-        <div class="info-section text-center">There are specific classes and clubs that are either only offered
-            in the B-Wing or originate from the B-Wing. Most count towards the 21st century requirement, where
-            all offer unforgettable experiences inside and outside the classroom.
+        <div class="info-section text-center">Dave Yasser and Lenny DePinto have owned Florentinos since 1990. They have been a family owned and operated business dedicated to providing handcrafted food and exceptional service at affordable prices, all while actively giving back to the Monmouth County community. Dave and Lenny, alongside their dedicated team of employees, work together to uphold the highest standards of quality and service, creating a welcoming and exceptional experience for every customer. Their passion for high-quality ingredients and attention to detail has earned Florentino's a reputation as a local favorite. Whether you're stopping in for a quick bite or catering a special event, their commitment to excellence ensures that every customer leaves satisfied.
         </div>
     </div>
 </div>

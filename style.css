@@ -220,3 +220,57 @@
     margin: -100px;
     box-shadow: black 0px 2px 4px 0px, rgb(64, 64, 64) 0px 2px 16px 0px;
 }
+
+@media (min-width: 992px) {
+
+    .offer-image {
+        height: 600px !important;
+        width: clamp(300px, 50vw, 800px) !important;
+        position: relative;
+        right: 50px;
+    }
+
+    .offer-text {
+        width: clamp(350px, 30vw, 500px) !important;
+        height: clamp(400px, 30vw, 500px) !important;
+        position: relative;
+        right: 50px;
+    }
+
+    .staff-image {
+        height: 600px !important;
+        width: clamp(300px, 50vw, 800px) !important;
+        position: relative;
+        left: 50px;
+    }
+
+    .staff-text {
+        width: clamp(350px, 30vw, 500px) !important;
+        height: clamp(400px, 30vw, 500px) !important;
+        position: relative;
+        left: 50px;
+    }
+
+    .info-section {
+        font-size: clamp(15px, 1.2vw, 20px) !important;
+    }
+
+    .footer-image {
+        width: 350px !important;
+        height: 350px !important;
+    }
+
+    .roompic {
+        border-radius: 10px 0 0 10px;
+    }
+
+    .descriptioncroom {
+        border-radius: 0 10px 10px 0;
+        height: 350px;
+    }
+
+    .course-image {
+        height: 300px;
+    }
+
+}

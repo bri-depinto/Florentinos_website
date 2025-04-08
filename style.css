@@ -189,6 +189,18 @@
     transition: 0.3s;
     box-shadow: none;
 }
+.menu:active{
+    background-color: #062712 !important;
+    color: #ffffff !important;
+    border: 3px solid black !important;
+    font-family: "otomanopee-one", sans-serif !important;
+    width: 165px;
+    height: 70px;
+    transform: scale(1.01);
+    transition: 0.3s;
+    box-shadow: none;
+}
+
 
 .semi-circle {
     background: #104121;
@@ -221,6 +233,10 @@
 
 .info-title {
     font-family: "otomanopee-one", sans-serif;
+    color: white;
+    -webkit-text-stroke-width: 5px;
+    -webkit-text-stroke-color: black;
+    paint-order: stroke fill;
 }
 
 .offer-text {
@@ -229,7 +245,7 @@
     background: #104121;
     border: #000000 5px solid;
     border-radius: 6px;
-    color: black;
+    color: rgb(255, 255, 255);
     z-index: 2;
     margin: -100px;
     box-shadow: black 0px 2px 4px 0px, rgb(64, 64, 64) 0px 2px 16px 0px;
@@ -291,8 +307,6 @@
 
 
 .scene {
-
-    margin: 40px 0;
     position: relative;
     width: 210px;
     height: 140px;
@@ -354,11 +368,13 @@
 }
 
 .carousel__cell:nth-child(9n+7) {
-    background: hsla(240, 100%, 50%, 0.8);
+    background: url(images/balsamic.jpg);
+    background-size: cover;
 }
 
 .carousel__cell:nth-child(9n+8) {
-    background: hsla(280, 100%, 50%, 0.8);
+    background: url(images/cheeseplatter.jpg);
+    background-size: cover;
 }
 
 .carousel__cell:nth-child(9n+0) {

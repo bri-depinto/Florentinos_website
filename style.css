@@ -339,15 +339,18 @@
 }
 
 .carousel__cell:nth-child(9n+4) {
-    background: hsla(120, 100%, 50%, 0.8);
+    background: url(images/sandwhich.jpg);
+    background-size: cover;
 }
 
 .carousel__cell:nth-child(9n+5) {
-    background: hsla(160, 100%, 50%, 0.8);
+    background: url(images/shrimp.jpg);
+    background-size: cover;
 }
 
 .carousel__cell:nth-child(9n+6) {
-    background: hsla(200, 100%, 50%, 0.8);
+    background: url(images/grilledchickenplatter.jpg);
+    background-size: cover;
 }
 
 .carousel__cell:nth-child(9n+7) {
@@ -396,4 +399,54 @@
 
 .carousel__cell:nth-child(9) {
     transform: rotateY(320deg) translateZ(288px);
+}
+.previous-button {
+    background-color: #104121;
+    color: #ffffff;
+    border: 3px solid black;
+    font-family: "otomanopee-one", sans-serif;
+    width: 140px;
+    height: 60px;
+    box-shadow: #000000 0px 4px 8px 0px, #000000 4px 4px 16px 0px;
+    transition: .3s;
+   border-radius: 12px;
+   margin: 10px;
+}
+
+.previous-button:hover {
+    background-color: #062712;
+    color: #ffffff;
+    border: 3px solid black;
+    font-family: "otomanopee-one", sans-serif;
+    width: 140px;
+    height: 60px;
+    transform: scale(1.2);
+    transition: 0.3s;
+    box-shadow: none;
+    border-radius: 12px;
+}
+.next-button {
+    background-color: #104121;
+    color: #ffffff;
+    border: 3px solid black;
+    font-family: "otomanopee-one", sans-serif;
+    width: 140px;
+    height: 60px;
+    box-shadow: #000000 0px 4px 8px 0px, #000000 4px 4px 16px 0px;
+    transition: .3s;
+    border-radius: 12px;
+     margin: 10px;
+}
+
+.next-button:hover {
+    background-color: #062712;
+    color: #ffffff;
+    border: 3px solid black;
+    font-family: "otomanopee-one", sans-serif;
+    width: 140px;
+    height: 60px;
+    transform: scale(1.2);
+    transition: 0.3s;
+    box-shadow: none;
+    border-radius: 12px;
 }

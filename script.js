@@ -22,26 +22,40 @@ const vue_app = Vue.createApp({
 vue_app.mount("#vue_app");
 
 
-var carousel = document.querySelector('.carousel');
-var cellCount = 9;
-var selectedIndex = 0;
+const carousel = document.querySelector('.carousel');
+const cells = document.querySelectorAll('.carousel__cell');
+const cellCount = cells.length;
+let selectedIndex = 0;
 
 function rotateCarousel() {
-  var angle = selectedIndex / cellCount * -360;
-  carousel.style.transform = 'translateZ(-288px) rotateY(' + angle + 'deg)';
+  const cellWidth = carousel.offsetWidth * 0.9; // 90% of scene width
+  const radius = Math.round(cellWidth / (2 * Math.tan(Math.PI / cellCount)));
+  const angle = selectedIndex / cellCount * -360;
+
+  carousel.style.transform = `translateZ(-${radius}px) rotateY(${angle}deg)`;
+
+  // Apply transforms to each cell
+  cells.forEach((cell, i) => {
+    const cellAngle = (360 / cellCount) * i;
+    cell.style.transform = `rotateY(${cellAngle}deg) translateZ(${radius}px)`;
+  });
 }
 
-var prevButton = document.querySelector('.previous-button');
-prevButton.addEventListener( 'click', function() {
+// Initial setup
+rotateCarousel();
+
+// Buttons
+document.querySelector('.previous-button').addEventListener('click', () => {
   selectedIndex--;
   rotateCarousel();
 });
-
-var nextButton = document.querySelector('.next-button');
-nextButton.addEventListener( 'click', function() {
+document.querySelector('.next-button').addEventListener('click', () => {
   selectedIndex++;
   rotateCarousel();
 });
+
+// Optional: Recalculate on window resize
+window.addEventListener('resize', rotateCarousel);
 
 
 

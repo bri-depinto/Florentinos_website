@@ -472,3 +472,53 @@
 .review-widget_net{
     margin-top: 100px;
 }
+
+
+/* footer css */
+
+footer {
+    background-color: #104121;
+    color: #fff;
+    margin-top: 75px;
+    padding: 20px 50px;
+}
+
+.footer-text {
+    font-size: 18px;
+    font-family: "Kaisei Decol", serif;
+    font-weight: 100 !important;
+}
+
+.footer-day {
+    font-family: "otomanopee-one", sans-serif;     
+    font-weight: 500;
+    margin: 0;
+    font-size: clamp(25px, 2vw, 45px);
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: black;
+    paint-order: stroke fill;
+}
+
+
+.website,
+.place,
+.email,
+.phone {
+    font-size: clamp(20px, 2vw, 150px) !important;
+}
+
+.link {
+    color: #F4E04D !important;
+    font-family: "Fira Sans Condensed", serif;
+    transition: 0.2s;
+}
+
+.link:hover {
+    color: #b3a11e !important;
+    transition: 0.2s;
+}
+
+.footer-image {
+    width: 50px;
+    height: 50px;
+}

@@ -57,13 +57,13 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                        <a class="nav-link" aria-current="page" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About Us</a>
+                        <button class="nav-link" onclick="scrollToSection('about')">About Us</button>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Owners</a>
+                        <button class="nav-link" onclick="scrollToSection('owner')">Owners</button>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Favorites</a>
@@ -94,7 +94,7 @@
     </div>
     <div class="container-fluid">
         <div class="row d-flex justify-content-center align-items-center p-2">
-            <div class="semi-circle">
+            <div class="semi-circle" id="about">
                 <h1 class="text-center">
                     At Florentino's Catering, our mission is to create unforgettable culinary experiences by combining
                     exceptional flavors, fresh ingredients, and impeccable service. We are committed to exceeding our
@@ -109,7 +109,7 @@
 
         <!-- owners information -->
 
-        <div class="row info-row d-flex justify-content-center align-items-center">
+        <div class="row info-row d-flex justify-content-center align-items-center" id="owner">
             <div class="offer-image col-12 col-lg-6"></div>
             <div class="offer-text col-12 col-lg-6 d-flex flex-column justify-content-center align-items-center">
                 <h1 class="text-center info-title">Meet the Owners:</h1>
@@ -163,7 +163,7 @@
 
 
 <!-- google reviews widget -->
-<div class="review-widget_net" data-uuid="9e7884a6-c8b1-47c6-9bc6-415acb3a66a6" data-template="10" data-lang="en" data-theme="light"></div><script src="https://grwapi.net/widget.min.js"></script>
+<div class="review-widget_net" data-uuid="9e7884a6-c8b1-47c6-9bc6-415acb3a66a6" data-template="10" data-lang="en"></div><script src="https://grwapi.net/widget.min.js"></script>
 <!-- google revoews widget -->
 
 

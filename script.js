@@ -22,6 +22,8 @@ const vue_app = Vue.createApp({
 vue_app.mount("#vue_app");
 
 
+
+
 const carousel = document.querySelector('.carousel');
 const cells = document.querySelectorAll('.carousel__cell');
 const cellCount = cells.length;
@@ -73,3 +75,16 @@ window.addEventListener('scroll', () => {
         nav.classList.remove('navbar-scrolled');
     }
 });
+
+let navHeight = parseInt(getComputedStyle(nav).height, 10);
+
+// Button on scroll function that does not cut off div
+function scrollToSection(id) {
+  const element = document.getElementById(id);
+  const offset = navHeight + 75;
+  const elementPosition = element.getBoundingClientRect().top + window.scrollY;
+  window.scrollTo({
+      top: elementPosition - offset,
+      behavior: "smooth"
+  });
+}

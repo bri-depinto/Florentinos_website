@@ -43,7 +43,7 @@
     <!-- background -->
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="index.html">
                 <img src="images/flos_logo.png" alt="Bootstrap" class="logoo">
             </a>
             <!-- Hamburger menu -->
@@ -57,19 +57,16 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
                         <button class="nav-link" onclick="scrollToSection('about')">About Us</button>
                     </li>
                     <li class="nav-item">
                         <button class="nav-link" onclick="scrollToSection('owner')">Owners</button>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Favorites</a>
+                        <button class="nav-link" onclick="scrollToSection('favorite')">Favorites</button>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Reviews</a>
+                        <button class="nav-link" onclick="scrollToSection('review')">Reviews</button>
                     </li>
                 </ul>
             </div>
@@ -125,7 +122,7 @@
             </div>
         </div>
         <div class="div d-flex justify-content-center align-items-center">
-            <h1 class="fan">Fan Favorites:</h1>
+            <h1 class="fan" id="favorite">Fan Favorites:</h1>
         </div>
 
 
@@ -144,7 +141,7 @@
             <div class="carousel__cell"></div>
             <div class="carousel__cell"></div>
             <div class="carousel__cell"></div>
-            <div class="carousel__cell">9</div>
+            <div class="carousel__cell"></div>
         </div>
 
 
@@ -163,7 +160,7 @@
 
 
 <!-- google reviews widget -->
-<div class="review-widget_net" data-uuid="9e7884a6-c8b1-47c6-9bc6-415acb3a66a6" data-template="10" data-lang="en"></div><script src="https://grwapi.net/widget.min.js"></script>
+<div class="review-widget_net" id="review" data-uuid="9e7884a6-c8b1-47c6-9bc6-415acb3a66a6" data-template="10" data-lang="en"></div><script src="https://grwapi.net/widget.min.js"></script>
 <!-- google revoews widget -->
 
 

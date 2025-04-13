@@ -528,7 +528,11 @@ footer {
     background-color: #104121;
     color: #fff;
     margin-top: 75px;
-    padding: 20px 50px;
+    padding: 50px 50px;
+}
+
+.footer-row {
+    margin-top: 50px;
 }
 
 .footer-text {
@@ -547,10 +551,16 @@ footer {
     paint-order: stroke fill;
 }
 
+.footer-img {
+    max-width: 200px;
+}
+
 
 .website,
 .place,
 .email,
+.facebook,
+.instagram,
 .phone {
     font-size: clamp(20px, 2vw, 150px) !important;
 }

@@ -537,8 +537,22 @@ footer {
 
 .footer-text {
     font-size: 18px;
-    font-family: "Kaisei Decol", serif;
+    font-family: "otomanopee-one", sans-serif;
     font-weight: 100 !important;
+}
+.footer-text-day {
+    font-size: 18px;
+    font-family: "otomanopee-one", sans-serif;
+    font-weight: 100 !important;
+    font-size: clamp(20px, 2vw, 25px);
+}
+.footer-header{
+    -webkit-text-stroke-width: 4px;
+    -webkit-text-stroke-color: black;
+    paint-order: stroke fill;
+    color: white;
+    font-family: "otomanopee-one", sans-serif;
+    font-size: clamp(25px, 2vw, 45px);
 }
 
 .footer-day {
@@ -552,7 +566,7 @@ footer {
 }
 
 .footer-img {
-    max-width: 200px;
+    max-width: 250px;
 }
 
 
@@ -565,17 +579,6 @@ footer {
     font-size: clamp(20px, 2vw, 150px) !important;
 }
 
-.link {
-    color: #F4E04D !important;
-    font-family: "Fira Sans Condensed", serif;
-    transition: 0.2s;
-}
-
-.link:hover {
-    color: #b3a11e !important;
-    transition: 0.2s;
-}
-
 .footer-image {
     width: 50px;
     height: 50px;
@@ -585,4 +588,20 @@ footer {
     .img-header {
         height: 800px;
     }
+}
+hr{
+    border: solid #000000 3px;
+    margin-top: 4;
+    opacity: 100%;
+    width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 700;
+    font-style: normal;
+}
+.bottom-text{
+    font-family: "Kalam", cursive;
+    margin-top: 50px;
+    font-size: 23px;
+    color: black;
 }

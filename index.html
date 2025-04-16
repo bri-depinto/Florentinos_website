@@ -58,6 +58,9 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mb-2 mb-lg-0">
                     <li class="nav-item">
+                        <button class="nav-link" onclick="scrollToSection('menus')"> Menus </button>
+                    </li>
+                    <li class="nav-item">
                         <button class="nav-link" onclick="scrollToSection('about')">About Us</button>
                     </li>
                     <li class="nav-item">
@@ -68,6 +71,9 @@
                     </li>
                     <li class="nav-item">
                         <button class="nav-link" onclick="scrollToSection('review')">Reviews</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link" onclick="scrollToSection('hours/contact')">Contact/Hours</button>
                     </li>
                 </ul>
             </div>
@@ -84,7 +90,7 @@
         </div>
         <div class="row justify-content-center g-4">
             <div class="the-button col-6 col-lg-3 d-flex" v-for="menu in menus" :key="menu.id">
-                <button class="menu btn" @click="openPdf(menu.link)">
+                <button class="menu btn" id="menus" @click="openPdf(menu.link)">
                     {{ menu.name }}
                 </button>
             </div>
@@ -173,7 +179,7 @@
         <h1 class="footer-day text-center"> We hope you have a Florentino Day!</h1>
         <hr> </hr>
         <div class="footer-row row d-flex justify-content-center align-items center">
-            <div class="hours col-6 col-lg-4 d-flex justify-content-center align-items-center flex-column">
+            <div class="hours col-6 col-lg-4 d-flex justify-content-center align-items-center flex-column" id="hours/contact">
                 <h3 class="text-center footer-header">Hours:</h3>
                 <p class="footer-text-day">Monday-Saturday:</p>
                 <p class="footer-text">9am-5pm</p>

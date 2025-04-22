@@ -1,18 +1,18 @@
 [
     {
-        "name": "Catering Menu",
+        "name": "Catering",
         "link": "catering-menu.pdf"
     },
     {
-        "name": "Easter Menu",
+        "name": "Easter",
         "link": "Easter-menu.pdf"
     },
     {
-        "name": "Lunch Pickup Menu",
+        "name": "Lunch Pickup",
         "link": "lunch-menu.pdf"
     },
     {
-        "name": "Lunch Delivery Menu",
+        "name": "Lunch Delivery",
         "link": "https://www.doordash.com/en-NZ/store/florentinos-middletown-township-31552303/45431748/?srsltid=AfmBOooqF4dgLYjWzD9v_bztry6JwFZysqdFCEaBfTgXCcosuauHUURo"
     }
 ]

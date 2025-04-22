@@ -146,7 +146,7 @@
     -webkit-text-stroke-width: 6px;
     -webkit-text-stroke-color: black;
     color: white;
-    font-size: 75px;
+    font-size: clamp(62px, 6vw, 82px);
     font-family: "Kurale", serif;
     paint-order: stroke fill;
     font-weight: 500;
@@ -549,10 +549,9 @@ footer {
     font-weight: 100 !important;
 }
 .footer-text-day {
-    font-size: 18px;
     font-family: "otomanopee-one", sans-serif;
     font-weight: 100 !important;
-    font-size: clamp(20px, 2vw, 25px);
+    font-size: clamp(19px, 2vw, 25px);
 }
 .footer-header{
     -webkit-text-stroke-width: 4px;

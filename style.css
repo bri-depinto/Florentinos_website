@@ -555,7 +555,7 @@ footer {
 }
 
 .footer-text {
-    font-size: 18px;
+    font-size: 15px;
     font-family: "otomanopee-one", sans-serif;
     font-weight: 100 !important;
 }
@@ -563,7 +563,7 @@ footer {
 .footer-text-day {
     font-family: "otomanopee-one", sans-serif;
     font-weight: 100 !important;
-    font-size: clamp(19px, 2vw, 25px);
+    font-size: clamp(17px, 2vw, 25px);
 }
 
 .footer-header {
